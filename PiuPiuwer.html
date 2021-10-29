@@ -1,0 +1,172 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href=".\SVG\duck.svg">
+        <link rel="stylesheet" href=".\CSS\Design.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PiuPiuwer</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="moldura">
+                <div id="iconePP">
+                    <img id="duck" src=".\PNG\duck.png">
+                </div>
+            </div>
+
+            <div id="piupiuwerLogo">
+                <h1>PP</h1>
+            </div>
+
+            <div id="pesquisa">
+                <input type=text id="textoPesquisa" placeholder="Pesquisar no PiuPiuwer" name="pesquisar">
+                <div id="açãoPesquisa" onclick="pesquisar(document.getElementById('textoPesquisa').value)">
+                    <img id="lupa" src=".\SVG\lupa.svg">
+                </div>
+            </div>
+
+            <div class="moldura" id="fotoPerfil">
+                <img id="tomHolland" src=".\PNG\tomholland.png">
+            </div>
+
+            <div id="nome">
+                <h2>Tom</h2>
+            </div>
+            
+            <div class="moldura" id="notificações">
+                <img id="notificações" src=".\SVG\notificações.svg">
+            </div>
+
+            <div class="moldura" id="mensagens">
+                <img id="mensagens" src=".\SVG\mensagens.svg">
+            </div>
+        </div>
+
+        <div id="centro">
+            <div class="sidebar" id="sidebarEsquerdo">
+                <img id="bolsonaroPegandoFogo" src=".\PNG\bolsonaro.png">
+                <h2>Acontecendo agora...</h2>
+                
+                <div class="assuntos" id="acontecendoAgora">
+                    <div class="assunto">
+                        <h3>bolsonaro</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>protestos</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>JUNGKOOK EU TE AMO</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>coitada da zendaya</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>o elon musk eh meio burro</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>mengao</h3>
+                    </div>
+
+                    <div class="assunto">
+                        <h3>menas x timothee</h3>
+                    </div>
+                </div>
+
+                <h2>Pessoas sugeridas</h2>
+                <div class="pessoasSugeridas" id="pessoas">
+                    <div class=pessoa>
+                        <img id="lilnasx" src=".\PNG\lilnasx.png">
+                        <h3>montero 🦆</h3>
+                        <h3>@lilnasx</h3>
+                    </div>
+
+                    <div class=pessoa>
+                        <img id="neto" src=".\PNG\neto.png">
+                        <h3>neto</h3>
+                        <h3>@netorocha2002</h3>
+                    </div>
+
+                    <div class=pessoa>
+                        <img id="BTS" src=".\PNG\bts.png">
+                        <h3>방탄소년단</h3>
+                        <h3>@BTS_twt</h3>
+                    </div>
+
+                    <div class=pessoa>
+                        <img id="ednaldo" src=".\PNG\ednaldopereira.png">
+                        <h3>Ednaldo Pereira</h3>
+                        <h3>@EdPe</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="publi">
+                <div id="indPublicações">
+                    <h2>PUBLICAÇÕES</h2>
+                </div>
+
+                <div id="postagem">
+                    <div class="caixaPiu" id="escreverPiu">
+                        <textarea class="escrever-piu" id="publicação" type="text"
+                        wrap="soft" maxlength="140" onkeyup="i(this.value)" 
+                        onkeydown="autosize(this)" placeholder="Dê um piu..." style="height: 14px;">
+                        </textarea>
+                    </div>
+
+                    <div class="abaixo">
+                        <img id="imagem" src=".\SVG\imagem.svg">
+                        <img id="gif" src=".\SVG\gif.svg">
+                        <img id="video" src=".\SVG\video.svg">
+                        <img id="enquete" src=".\SVG\enquete.svg">
+
+                        <p id="contador" style="color:#372B2B;" >0 / 140</p>
+
+                        <div class="botao" id="publicar" onclick="postarPiu()">
+                            <h3>PUBLICAR</h3>
+                        </div>
+                    </div>
+
+                    <div id="feed">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="resultados"> </div>
+            <div class="sidebar" id="sidebarDireito">
+                <img id=piuNavegação src=".\PNG\duck.png">
+
+                <div class="caixas" id="navegação">
+
+                    <div class="caixa">
+                        <img id="casinha" src=".\SVG\casinha.svg">
+                        <h3>Página Inicial</h3>
+                    </div>
+
+                    <div class="caixa">
+                        <img id="hashtag" src=".\SVG\hashtag.svg">
+                        <h3>Explorar</h3>
+                    </div>
+
+                    <div class="caixa">
+                        <img id="engrenagem" src=".\SVG\engrenagem.svg">
+                        <h3>Configurações</h3>
+                    </div>
+
+                    <div class="caixa">
+                        <img id="ajuda" src=".\SVG\ajuda.svg">
+                        <h3>Ajuda</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src=".\JavaScript\request.js"></script>
+        <script src=".\JavaScript\design.js"></script>
+    </body>
